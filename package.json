@@ -1,7 +1,7 @@
 {
   "name": "roulette-food",
   "version": "1.0.0",
-  "description": "Este es un backend para el proyecto de la ruleta de la comida 2022",
+  "description": "Este es un backend para el proyecto de la ruleta de la comida",
   "main": "server.js",
   "scripts": {
     "swagger-autogen": "node ./start.js",
