@@ -1,0 +1,161 @@
+
+// create and export examples of restaurants with name, address, phone, email, and image
+
+const RESTAURANTS = {
+    restaurants: [
+        {
+            id: 1,
+            name: "Jürgens",
+            description: "Un restaurante con un ambiente sobrio aunque elegante. Estarás comiendo con todas las comodidades y servido por un personal sumamente profesional",
+            secondaryDescription:"Se requiere un codigo de vestimenta formal",
+            longDescription:"El equilibrio entre los colores, el sabor y el valor nutricional son aspectos en la creación del menú de Jürgens, es por esto que nuestros clientes reconocen y valoran la experiencia culinaria de nuestro restaurante.",
+            secondaryLongDescription:"Nuestro público nos acompaña desde hace 20 años, disfrutando de nuestros clásicos de siempre, menús de temporada y extensa carta de vinos. Descubra por qué somos considerados uno de los mejores restaurantes de San José.",
+            address: "50 metros al Norte del MIDEPLAN sobre el Boulevard Dent Contiguo al Hotel Boutique Jade, en, Dent, San José",
+            phone: "2283 2239",
+            web: "jurgensrestaurante.com",
+            filters: ['Gourmet'],
+            photo1: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1656884994/roulette-food/restaurants/vector-restaurant-label-food-service-logo_mmjoq9.jpg",
+            photo2: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1657129648/roulette-food/restaurants/Jurgens2_ddg4em.png",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657129677/roulette-food/restaurants/Jurgens3_nfnfty.png"
+        },
+        {
+            id: 2,
+            name: "Subway",
+            description: "Subway Costa Rica conquista un segmento de la población joven y profesional, que aman poder escoger y personalizar sus sándwiches a su estilo.",
+            secondaryDescription:"Actualmente, Costa Rica tiene 78 restaurantes Subway, distribuidos en las siete provincias.",
+            longDescription:"A sus 17 años, el estadounidense Fred DeLuca, tenía un sueño de ser médico. Sin embargo, su situación económica no le permitía costear su educación, por lo que le pidió consejo a un amigo de la familia: Peter Buck. Buck le recomendó que abriera una tienda de sandwiches tipo submarines. Gracias al aporte de Buck de $1.000, el 28 de agosto de 1965 se abrió el primer Subway en Bridgeport, Connecticut, El resto es historia.",
+            secondaryLongDescription:"¨El mundo no se detiene y no merecemos estar donde estamos a menos que nos mantengamos a la vanguardia de las cosas y tomemos las medidas necesarias para seguir siendo competitivos¨ dijo Fred DeLuca, quien falleció en septiembre de 2015 a sus 67 años. Suzanne Greco, hermana de DeLuca, es hoy la presidente y CEO de Subway.",
+            address: "Plaza Maynard, San José, Escazú, 10201",
+            phone: "8665 8555",
+            web: "https://www.subwaycostarica.com/",
+            filters: ['Fast Food'],
+            photo1: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1656885074/roulette-food/restaurants/latest_rnayxz.png",
+            photo2: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1657129980/roulette-food/restaurants/Subway2_l0tz0i.jpg",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657130022/roulette-food/restaurants/Subway3_vuna0i.png"
+        },
+        {
+            id: 3,
+            name: "Spoon",
+            description: "Spoon es ese espacio cálido y contemporáneo, vibrante de gente que busca sentirse atendida y elegir de un menú reconocible con acentos del mundo actual",
+            secondaryDescription:"Dejanos meter la cuchara!",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address: "Avenida Segunda, frente a la Plaza de la Democracia, Av. 2, San José",
+            phone: "2259-6000",
+            web: "https://www.spooncr.com/",
+            filters: ['Coffer and Tea'],
+            photo1: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1656885120/roulette-food/restaurants/spoon_ey9l1i.jpg",
+            photo2: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1657130307/roulette-food/restaurants/Spoon2_ofa0il.png",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657130306/roulette-food/restaurants/spoon3_b5cmxz.png"
+        },
+        {
+            id: 4,
+            name: "Burger King",
+            description: "La Casa del Whopper.",
+            secondaryDescription:"El autentico sabor 100% a la parilla",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address: "Avenida Segunda, frente a la Plaza de la Democracia, Av. 2, San José",
+            phone: "2222 2223",
+            web: "http://www.bk.com/",
+            filters: ['Fast Food'],
+            photo1: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1656885045/roulette-food/restaurants/unknown_ey3xta.png",
+            photo2: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131211/roulette-food/restaurants/bk2_dyevba.png",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131211/roulette-food/restaurants/bk3_lqr7g2.png"
+        },
+        {
+            id: 5,
+            name: "Restaurante la Casona",
+            description: "Disfruta de nuestra deliciosa comida Típica Costarricense",
+            secondaryDescription:"Come una gran variedad de los platillos que ofrece Costa Rica",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address: "Avenida Segunda, frente a la Plaza de la Democracia, Av. 2, San José",
+            phone: "2258 8384",
+            web: "https://www.facebook.com/restaurantelacasonatipica/",
+            filters: ['Healthy'],
+            photo1: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1656885066/roulette-food/restaurants/-S2vktPq_400x400_wk7dpg.jpg",
+            photo2: "https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131410/roulette-food/restaurants/casona2_b0zhce.png",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131412/roulette-food/restaurants/casona3_q6oawn.png"
+        },
+        {
+            id:6,
+            name:"KFC",
+            description:"8 especias, 1 taza de originalidad, y el mejor pollo, eso es KFC",
+            secondaryDescription:"Disfruta del mejor pollo, nunca congelado",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address:"Food court centro comercial Plaza Mayor Rohomoser, San José",
+            phone:"2291 1303",
+            web:"https://kfccostarica.com/",
+            filters:['Fast Food'],
+            photo1:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131829/roulette-food/restaurants/KFC_ff0gmb.png",
+            photo2:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131829/roulette-food/restaurants/KFC3_c9i0sb.jpg",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131828/roulette-food/restaurants/KFC2_zl0as0.jpg"
+        },
+        {
+            id:7,
+            name:"McDonalds",
+            description:"Arcos Dorados es el mayor operador de restaurantes de McDonald’s en América Latina y el Caribe y su mayor franquiciado en el mundo.",
+            secondaryDescription:"Vive el sabor del tiempo con familia en McDonalds",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address:"100 Al Este De La Estación De Servicio Delta, San Rafael De Escazú, 105, San José, Escazú",
+            phone:"905-286-0101",
+            web:"https://www.mcdonalds.co.cr/",
+            filters:['Fast Food'],
+            photo1:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1656885053/roulette-food/restaurants/descarga_gjci2j.jpg",
+            photo2:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131672/roulette-food/restaurants/Mcdonalds2_qh5xi8.jpg",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131672/roulette-food/restaurants/McDonalds3_zfllaf.png"
+        },
+        {
+            id:8,
+            name:"Mocapán",
+            description:"Los ingredientes de nuestros panes son simples: harina, levadura o masa madre, agua, sal y tiempo. No agregamos aditivos, colorantes o agentes conservadores. ",
+            secondaryDescription:"Horneamos nuestros panes, bollos y repostería todos los días y durante todo el día. Siempre recién salido del horno, siempre fresco, siempre delicioso.",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address:"Nunciatura, San José",
+            phone:"4080-1380",
+            web:"https://www.mocapan.com/",
+            filters:['Sea Food'],
+            photo1:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131989/roulette-food/restaurants/Mocapan3_ojxp6a.jpg",
+            photo2:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131989/roulette-food/restaurants/Mocapan_tnr5qa.jpg",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657131989/roulette-food/restaurants/Mocapan2_tryniz.jpg"
+        },
+        {
+            id:9,
+            name:"Tang Diang Xuang",
+            description:"Disfruta del indudablemente mejor bubble tea de todo Costa Rica!",
+            secondaryDescription:"Contamos con una gran variedad de postres con sabores traidos directo de China",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address:"Barrio chino, San jose, Costa Rica",
+            phone:"70337711",
+            web:"https://www.instagram.com/tangdianxuan/?hl=es",
+            filters:['Korean'],
+            photo1:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657132173/roulette-food/restaurants/TDX3_xh7a98.png",
+            photo2:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657132175/roulette-food/restaurants/TDX1_s1laek.png",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657132176/roulette-food/restaurants/TDX2_paejio.png"
+        },
+        {
+            id:10,
+            name:"Nacion Sushi",
+            description:"Los colores, las formas, los aromas y la amabilidad de nuestros servidores, te guiarán por un mágico recorrido culinario a Asia",
+            secondaryDescription:"Costa rica, es terriotorio Nacion Sushi",
+            longDescription:"",
+            secondaryLongDescription:"",
+            address:"Escazu Valley, San jose",
+            phone:"2208 8764",
+            web:"https://nacionsushi.com/",
+            filters:['Japanese'],
+            photo1:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657132308/roulette-food/restaurants/nacion2_rg9dbv.png",
+            photo2:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657132308/roulette-food/restaurants/nacion3_jmynp7.jpg",
+            photo3:"https://res.cloudinary.com/di4zuv4nk/image/upload/v1657132308/roulette-food/restaurants/nacion1_hjag7s.png"
+        }
+    ],
+}
+
+module.exports = {
+    RESTAURANTS
+}

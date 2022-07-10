@@ -1,0 +1,457 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "RouletteFood",
+    "description": "Choose your place to eat randomly"
+  },
+  "host": "localhost:8000",
+  "basePath": "/",
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "paths": {
+    "/users/": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "authorization",
+            "in": "header",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a user",
+            "schema": {
+              "$ref": "#/definitions/CreateUser"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/users/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a user",
+            "schema": {
+              "$ref": "#/definitions/LoginUser"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/users/recover-password": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a user",
+            "schema": {
+              "$ref": "#/definitions/RecoverPassword"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/users/confirm-code": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a user",
+            "schema": {
+              "$ref": "#/definitions/RecoverPassword"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/users/reset-password": {
+      "patch": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a user",
+            "schema": {
+              "$ref": "#/definitions/ResetPassword"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/users/custom-restaurant": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/restaurant/": {
+      "get": {
+        "tags": [
+          "Restaurants"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Get a restaurant",
+            "schema": {
+              "$ref": "#/definitions/CreateRestaurant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Restaurants"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Add a restaurant",
+            "schema": {
+              "$ref": "#/definitions/CreateRestaurant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/restaurant/get-restaurants": {
+      "get": {
+        "tags": [
+          "Restaurants"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Get a restaurant",
+            "schema": {
+              "$ref": "#/definitions/CreateRestaurant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/restaurant/get-restaurant": {
+      "get": {
+        "tags": [
+          "Restaurants"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Get a restaurant",
+            "schema": {
+              "$ref": "#/definitions/CreateRestaurant"
+            }
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/filters/": {
+      "get": {
+        "tags": [
+          "Restaurants"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Get a restaurant",
+            "schema": {
+              "$ref": "#/definitions/CreateRestaurant"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CreateUser": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "José Rodríguez Pérez"
+        },
+        "email": {
+          "type": "string",
+          "example": "example@email.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "password"
+        },
+        "countryCode": {
+          "type": "number",
+          "example": 506
+        },
+        "phone": {
+          "type": "number",
+          "example": 70155104
+        },
+        "birthday": {
+          "type": "string",
+          "example": "1989-10-16"
+        }
+      }
+    },
+    "LoginUser": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "example@email.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "password"
+        }
+      }
+    },
+    "RecoverPassword": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "example@email.com"
+        }
+      }
+    },
+    "ResetPassword": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "example": "example@email.com"
+        },
+        "password": {
+          "type": "string",
+          "example": "password"
+        },
+        "code": {
+          "type": "number",
+          "example": 123456
+        }
+      }
+    },
+    "CreateRestaurant": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "Restaurante los patitos"
+        },
+        "description": {
+          "type": "string",
+          "example": "El restaurante mas bueno"
+        },
+        "secondaryDescription": {
+          "type": "string",
+          "example": "You wont regret it"
+        },
+        "address": {
+          "type": "string",
+          "example": "2 miles to the north from the store"
+        },
+        "filters": {
+          "type": "array",
+          "example": [
+            "filter",
+            "filter"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

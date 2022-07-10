@@ -1,0 +1,44 @@
+{
+  "name": "roulette-food",
+  "version": "1.0.0",
+  "description": "Este es un backend para el proyecto de la ruleta de la comida",
+  "main": "server.js",
+  "scripts": {
+    "swagger-autogen": "node ./start.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "keywords": [
+    "backend",
+    "roulette",
+    "food"
+  ],
+  "author": "Andrey Elizondo & Rodrigo Li",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1152.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^2.10.0",
+    "nodemailer": "^6.7.5",
+    "swagger-ui-express": "^4.4.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "swagger-autogen": "^2.21.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyEliVar/roulette-food-backend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreyEliVar/roulette-food-backend/issues"
+  },
+  "homepage": "https://github.com/AndreyEliVar/roulette-food-backend#readme"
+}
