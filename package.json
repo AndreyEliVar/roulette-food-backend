@@ -1,7 +1,7 @@
 {
   "name": "roulette-food",
   "version": "1.0.0",
-  "description": "Este es un backend para el proyecto de la ruleta de la comida",
+  "description": "Este es un backend para el proyecto de la ruleta de la comida 2022",
   "main": "server.js",
   "scripts": {
     "swagger-autogen": "node ./start.js",
@@ -32,13 +32,5 @@
   "devDependencies": {
     "nodemon": "^2.0.16",
     "swagger-autogen": "^2.21.5"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AndreyEliVar/roulette-food-backend.git"
-  },
-  "bugs": {
-    "url": "https://github.com/AndreyEliVar/roulette-food-backend/issues"
-  },
-  "homepage": "https://github.com/AndreyEliVar/roulette-food-backend#readme"
+  }
 }
