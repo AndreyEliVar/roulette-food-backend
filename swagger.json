@@ -5,7 +5,7 @@
     "title": "RouletteFood",
     "description": "Choose your place to eat randomly"
   },
-  "host": "localhost:8000",
+  "host": "immense-sea-88595.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "http",

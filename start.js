@@ -6,7 +6,7 @@ const doc = {
     title: 'RouletteFood',        // by default: 'REST API'
     description: 'Choose your place to eat randomly',  // by default: ''
   },
-  host: 'immense-sea-88595.herokuapp.com/',      // by default: 'localhost:3000'
+  host: 'immense-sea-88595.herokuapp.com',      // by default: 'localhost:3000'
   schemes: ["http","https"],   // by default: ['http']
   definitions:{
       CreateUser: {
